@@ -4,3 +4,4 @@ coverage
 tsconfig.json
 .*
 *.tgz
+example
