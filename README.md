@@ -36,6 +36,16 @@ export const config = {
 };
 ```
 
+## Usage
+
+If your config is set up accordingly, the service will set the [`baseUrl`](https://webdriver.io/docs/configuration#baseurl) option to point to your application. You can navigate to it via the [`url`](https://webdriver.io/docs/api/browser/url) command, e.g.:
+
+```ts
+await browser.url('/')
+await expect(browser).toHaveTitle('Vite + Lit + TS')
+await expect($('aria/Vite + Lit')).toBePresent()
+```
+
 ## Options
 
 ### `configFile`

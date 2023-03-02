@@ -20,7 +20,7 @@ export class ViteServiceLauncher {
         log.info(`Initiate Vite Service (v${pkg.version})`)
         this.#config = config
         this.#options = <Required<ViteServiceOptions>>{
-            configFile: 'vite.conf.ts',
+            configFile: 'vite.config.ts',
             configRoot: process.cwd(),
             mode: 'development',
             logLevel: 'info',

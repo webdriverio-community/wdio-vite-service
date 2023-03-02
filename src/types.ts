@@ -4,7 +4,7 @@ export interface ViteServiceOptions {
     /**
      * Path to config file.
      *
-     * @default vite.conf.ts
+     * @default vite.config.ts
      */
     configFile?: string
     /**
