@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       releaseType:
-        description: "Release Type"
+        description: "Release type - major, minor or patch"
         required: true
         type: choice
         default: "patch"
@@ -32,13 +32,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: 'main'
           fetch-depth: 0
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18
       - name: NPM Setup
         run: |
           npm set registry "https://registry.npmjs.org/"
@@ -50,8 +50,8 @@ jobs:
           git config --global user.name "WebdriverIO Release Bot"
       - name: Install Dependencies
         run: npm ci
-      - name: Build Project
-        run: npm run ci
+      - name: Build
+        run: npm run build
       - name: Release
         run: npx release-it ${{github.event.inputs.releaseType}} --github.release --ci --npm.skipChecks --no-git.requireCleanWorkingDir --npm.tag=${{github.event.inputs.distTag}}
         env:
