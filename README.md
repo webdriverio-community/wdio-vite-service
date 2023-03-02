@@ -1,2 +1,71 @@
-# wdio-vite-service
-A service to launch applications build with Vite
+# WDIO Vite Service [![Tests](https://github.com/webdriverio-community/wdio-vite-service/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/webdriverio-community/wdio-vite-service/actions/workflows/test.yml)
+
+This service helps you to launch your application when using [Vite](https://vitejs.dev/) as build tool. It automatically starts the Vite server using your `vite.conf.js` before launching the test.
+
+## Installation
+
+```bash
+npm install wdio-vite-service --save-dev
+```
+
+## Configuration
+
+To enable the service, just add it to your `services` list in your `wdio.conf.js` file, e.g.:
+
+```js
+// wdio.conf.js
+export const config = {
+    // ...
+    services: ['vite'],
+    // ...
+};
+```
+
+You can apply service option by passing in an array with a config object, e.g.:
+
+```js
+// wdio.conf.js
+export const config = {
+    // ...
+    services: [
+        ['vite', {
+            configFile: './custom.vite.conf.js'
+        }]
+    ],
+    // ...
+};
+```
+
+## Options
+
+### `configFile`
+
+Path to config file.
+
+Type: `string`<br />
+Default: _vite.conf.ts_
+
+### `configRoot`
+
+Root directory of the project.
+
+Type: `string`<br />
+Default: `process.cwd()`
+
+### `mode`
+
+Define the mode used to start the server. See also Vite [Modes](https://vitejs.dev/guide/env-and-mode.html#modes).
+
+Type: `string`<br />
+Default: `development`
+
+### `logLevel`
+
+Adjust console output verbosity.
+
+Type: `'info' | 'warn' | 'error' | 'silent'`<br />
+Default: `'info'`
+
+----
+
+For more information on WebdriverIO see the [homepage](https://webdriver.io).
