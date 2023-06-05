@@ -80,7 +80,7 @@
   },
   "dependencies": {
     "@wdio/logger": "^8.1.0",
-    "get-port": "^6.1.2",
+    "get-port": "^7.0.0",
     "vite": "^4.1.4"
   },
   "peerDependencies": {
