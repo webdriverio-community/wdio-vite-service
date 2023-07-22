@@ -1,8 +1,22 @@
+<p align="center">
+    <a href="https://webdriver.io/">
+        <img alt="WebdriverIO loves Nuxt" width="60%" src="https://raw.githubusercontent.com/webdriverio-community/wdio-vite-service/main/.github/assets/banner.png">
+    </a>
+</p>
+
 # WDIO Vite Service [![Tests](https://github.com/webdriverio-community/wdio-vite-service/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/webdriverio-community/wdio-vite-service/actions/workflows/test.yml)
 
 This service helps you to launch your application when using [Vite](https://vitejs.dev/) as build tool. It automatically starts the Vite server using your `vite.conf.js` before launching the test.
 
 ## Installation
+
+If you are getting started with WebdriverIO you can use the configuration wizard to set everything up:
+
+```sh
+npm init wdio@latest .
+```
+
+It will install all necessary plugins for you. If you are adding this service on an existing setup, you can always install it via:
 
 ```bash
 npm install wdio-vite-service --save-dev
