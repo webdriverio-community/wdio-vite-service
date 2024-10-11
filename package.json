@@ -1,6 +1,6 @@
 {
   "name": "wdio-vite-service",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "This service helps you to launch your application when using Vite as build tool.",
   "author": "Christian Bromann <mail@bromann.dev>",
   "license": "MIT",
