@@ -45,17 +45,13 @@ export class ViteServiceLauncher {
             throw new SevereServiceError(`Failed to load Vite config at ${this.#options.configFile}`)
         }
 
-        if (!viteConf?.config.server?.port) {
-            viteConf.config.server = {
-                port,
-                ...viteConf.config.server
-            }
-        }
-
+        const server = viteConf.config.server || {}
+        server.port = server?.port || port
+        server.host = server?.host || 'localhost'
         this.#server = await createServer({
             configFile: viteConf?.path,
             root: this.#options.configRoot,
-            ...viteConf?.config
+            server
         })
 
         const hostname = this.#server.config.server.host || 'localhost'
