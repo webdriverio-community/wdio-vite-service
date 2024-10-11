@@ -28,7 +28,7 @@ export class ViteServiceLauncher {
         }
     }
 
-    public async onPrepare (config: Options.Testrunner) {
+    public async onPrepare () {
         const port = await getPort()
         const configEnv: ConfigEnv = {
             command: 'serve',
@@ -57,9 +57,11 @@ export class ViteServiceLauncher {
             root: this.#options.configRoot,
             ...viteConf?.config
         })
-        process.env.WDIO_BASE_URL = `http://localhost:${this.#server.config.server.port}`
+
+        const hostname = `${this.#server.config.server.host}:${this.#server.config.server.port}`
+        process.env.WDIO_BASE_URL = `http://${hostname}`
         await this.#server.listen()
-        log.info(`Vite server started on ${config.baseUrl}`)
+        log.info(`Vite server started on ${hostname}`)
     }
 
     public async onComplete () {
