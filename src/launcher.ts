@@ -60,9 +60,9 @@ export class ViteServiceLauncher {
 
         const hostname = this.#server.config.server.host || 'localhost'
         const host = `${hostname}:${this.#server.config.server.port}`
-        process.env.WDIO_BASE_URL = `http://${hostname}`
+        process.env.WDIO_BASE_URL = `http://${host}`
         await this.#server.listen()
-        log.info(`Vite server started on ${hostname}`)
+        log.info(`Vite server started on ${host}`)
     }
 
     public async onComplete () {
