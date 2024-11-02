@@ -1,0 +1,31 @@
+{
+  "name": "wdio-vite-service-example",
+  "version": "1.0.0",
+  "description": "Vite Service example",
+  "author": "Christian Bromann <mail@bromann.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webdriverio-community/wdio-vite-service/issues"
+  },
+  "homepage": "https://github.com/webdriverio-community/wdio-vite-service#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdriverio-community/wdio-vite-service.git"
+  },
+  "keywords": [
+    "wdio",
+    "wdio-service",
+    "vite",
+    "vitejs",
+    "webdriverio"
+  ],
+  "dependencies": {
+    "@wdio/cli": "9.2.8",
+    "@wdio/local-runner": "9.2.8",
+    "@wdio/mocha-framework": "9.2.8",
+    "@wdio/spec-reporter": "9.2.8",
+    "@wdio/types": "9.2.2",
+    "vite": "^5.4.10",
+    "wdio-vite-service": "workspace:*"
+  }
+}
