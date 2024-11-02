@@ -1,7 +1,7 @@
+/// <reference types="webdriverio" />
 import path from 'node:path'
 import url from 'node:url'
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 export const config: WebdriverIO.Config = {
@@ -20,7 +20,7 @@ export const config: WebdriverIO.Config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: ['./specs/**/*.e2e.ts'],
+    specs: ['./tests/**/*.e2e.ts'],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

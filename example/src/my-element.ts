@@ -10,20 +10,20 @@ import litLogo from './assets/lit.svg'
  */
 @customElement('my-element')
 export class MyElement extends LitElement {
-  /**
-   * Copy for the read the docs hint.
-   */
-  @property()
-  docsHint = 'Click on the Vite and Lit logos to learn more'
+    /**
+     * Copy for the read the docs hint.
+     */
+    @property()
+        docsHint = 'Click on the Vite and Lit logos to learn more'
 
-  /**
-   * The number of times the button has been clicked.
-   */
-  @property({ type: Number })
-  count = 0
+    /**
+     * The number of times the button has been clicked.
+     */
+    @property({ type: Number })
+        count = 0
 
-  render() {
-    return html`
+    render() {
+        return html`
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -40,13 +40,13 @@ export class MyElement extends LitElement {
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
     `
-  }
+    }
 
-  private _onClick() {
-    this.count++
-  }
+    private _onClick() {
+        this.count++
+    }
 
-  static styles = css`
+    static styles = css`
     :host {
       max-width: 1280px;
       margin: 0 auto;
@@ -120,7 +120,7 @@ export class MyElement extends LitElement {
 }
 
 declare global {
-  interface HTMLElementTagNameMap {
-    'my-element': MyElement
-  }
+    interface HTMLElementTagNameMap {
+        'my-element': MyElement
+    }
 }
