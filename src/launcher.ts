@@ -4,7 +4,6 @@ import {
     createServer, loadConfigFromFile, type ViteDevServer, type ConfigEnv
 } from 'vite'
 import { SevereServiceError } from 'webdriverio'
-import type { Options } from '@wdio/types'
 
 import { pkg } from './constants.js'
 import type { ViteServiceOptions } from './types'
@@ -13,12 +12,10 @@ const log = logger('wdio-vite-service')
 
 export class ViteServiceLauncher {
     #options: Required<ViteServiceOptions>
-    #config: Options.Testrunner
     #server?: ViteDevServer
 
-    constructor (options: ViteServiceOptions, _: never, config: Options.Testrunner) {
+    constructor (options: ViteServiceOptions) {
         log.info(`Initiate Vite Service (v${pkg.version})`)
-        this.#config = config
         this.#options = <Required<ViteServiceOptions>>{
             configFile: 'vite.config.ts',
             configRoot: process.cwd(),
