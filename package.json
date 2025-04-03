@@ -53,21 +53,21 @@
     "watch": "npm run build -- --watch"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.9",
-    "@types/node": "^20.14.8",
-    "@wdio/eslint": "^0.0.3",
-    "eslint": "^9.14.0",
-    "husky": "^9.1.6",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.14.0",
+    "@wdio/eslint": "^0.1.1",
+    "eslint": "^9.23.0",
+    "husky": "^9.1.7",
     "lit": "^3.2.1",
-    "npm-run-all2": "^7.0.1",
-    "release-it": "^17.10.0",
+    "npm-run-all2": "^7.0.2",
+    "release-it": "^18.1.2",
     "rimraf": "^6.0.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@wdio/logger": "9.1.3",
+    "@wdio/logger": "9.4.4",
     "get-port": "^7.1.0",
-    "vite": "^5.4.10"
+    "vite": "^6.2.4"
   },
   "peerDependencies": {
     "@wdio/types": ">=9.0.0",
@@ -80,5 +80,6 @@
     "webdriverio": {
       "optional": false
     }
-  }
+  },
+  "packageManager": "pnpm@10.7.1"
 }

@@ -1,9 +1,9 @@
 exports.launcher = class CJSViteServiceLauncher {
     private instance?: any
 
-    constructor (options: any, _: never, config: any) {
+    constructor (options: any) {
         this.instance = import('../index.js').then((ViteServiceLauncher) => (
-            new ViteServiceLauncher.launcher(options, _, config)
+            new ViteServiceLauncher.launcher(options)
         ))
     }
 
