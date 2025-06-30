@@ -67,7 +67,7 @@
   "dependencies": {
     "@wdio/logger": "9.15.0",
     "get-port": "^7.1.0",
-    "vite": "^6.2.4"
+    "vite": "^7.0.0"
   },
   "peerDependencies": {
     "@wdio/types": ">=9.0.0",
