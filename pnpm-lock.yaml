@@ -19,7 +19,7 @@ importers:
         version: 7.1.0
       vite:
         specifier: ^7.0.0
-        version: 7.1.11(@types/node@22.14.0)(jiti@2.6.0)(tsx@4.19.2)
+        version: 7.1.12(@types/node@22.14.0)(jiti@2.6.0)(tsx@4.19.2)
       webdriverio:
         specifier: '>=9.0.0'
         version: 9.2.8
@@ -3191,8 +3191,8 @@ packages:
       terser:
         optional: true
 
-  vite@7.1.11:
-    resolution: {integrity: sha512-uzcxnSDVjAopEUjljkWh8EIrg6tlzrjFUfMcR1EVsRDGwf/ccef0qQPRyOrROwhrTDaApueq+ja+KLPlzR/zdg==}
+  vite@7.1.12:
+    resolution: {integrity: sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -6535,7 +6535,7 @@ snapshots:
       '@types/node': 22.14.0
       fsevents: 2.3.3
 
-  vite@7.1.11(@types/node@22.14.0)(jiti@2.6.0)(tsx@4.19.2):
+  vite@7.1.12(@types/node@22.14.0)(jiti@2.6.0)(tsx@4.19.2):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
