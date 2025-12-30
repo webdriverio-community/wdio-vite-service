@@ -54,20 +54,20 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.14.0",
-    "@wdio/eslint": "^0.1.1",
-    "eslint": "^9.23.0",
+    "@types/node": "^25.0.3",
+    "@wdio/eslint": "^0.1.3",
+    "eslint": "^9.39.2",
     "husky": "^9.1.7",
-    "lit": "^3.2.1",
-    "npm-run-all2": "^8.0.1",
-    "release-it": "^19.0.1",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.8.2"
+    "lit": "^3.3.2",
+    "npm-run-all2": "^8.0.4",
+    "release-it": "^19.2.2",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@wdio/logger": "9.18.0",
     "get-port": "^7.1.0",
-    "vite": "^7.0.0"
+    "vite": "^7.3.0"
   },
   "peerDependencies": {
     "@wdio/types": ">=9.0.0",
@@ -81,5 +81,5 @@
       "optional": false
     }
   },
-  "packageManager": "pnpm@10.7.1"
+  "packageManager": "pnpm@10.26.2"
 }
