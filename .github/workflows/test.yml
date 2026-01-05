@@ -31,7 +31,7 @@ jobs:
         run: pnpm run build
 
       - name: 🧪 Run Tests
-        uses: GabrielBB/xvfb-action@86d97bde4a65fe9b290c0b3fb92c2c4ed0e5302d # v1.6
+        uses: GabrielBB/xvfb-action@b706e4e27b14669b486812790492dc50ca16b465 # v1.7
         with:
           run: npm test
 
