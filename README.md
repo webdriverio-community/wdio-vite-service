@@ -6,6 +6,11 @@
 
 # WDIO Vite Service [![Tests](https://github.com/webdriverio-community/wdio-vite-service/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/webdriverio-community/wdio-vite-service/actions/workflows/test.yml)
 
+> [!IMPORTANT]
+> **This repository does not support WebdriverIO v10.** It stays in maintenance mode for WebdriverIO v9 only.
+>
+> It gets no new features. Only critical fixes for WebdriverIO v9 are possible.
+
 This service helps you to launch your application when using [Vite](https://vitejs.dev/) as build tool, including frameworks that use Vite under the hood, e.g. [Remix](https://remix.run/). It automatically starts the Vite server using your `vite.conf.js` before launching the test.
 
 ## Installation
